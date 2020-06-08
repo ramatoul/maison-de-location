@@ -1,0 +1,256 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*css pour les liens*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*CSS container et container fluid*/
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-content: center;
+    justify-content: center;
+    
+}
+.container-fluid{
+    padding: 0;
+    width: 100%;
+}
+.responsive-img{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card{
+    max-width: 18rem;
+}
+.card-desk{
+    max-width: 18rem;
+    margin: 10px;
+}
+.card-img{
+    max-width: 19rem;
+    margin: 15px;
+    border-radius: 9px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*css de la barre de navigation*/
+.head{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(235, 203, 163);
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+/*css pour le logo hayyat-immob*/
+.Logo{
+    background-color: #e88a15;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px rgb(0,0,0, 0.6);
+    height: 55px;
+    width: 200px;
+    margin-left: 25px;
+}
+.logo{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top:15px;
+    left: 25px;
+
+}
+
+/*css pour les bouton de la barre de navigation*/
+.lien{
+    display: flex;
+    align-items: center;
+    margin: 10PX;
+}
+.btn{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: dodgerblue;
+    border-radius: 3px;
+    color: white;
+    font-weight: 900;
+}
+
+/* le suvole des boutons de la barre de navigation*/
+.btn:hover{
+    color: rgb(45, 45, 247);
+    background-color: white;
+}
+
+/*css pour le texte qui défile*/
+.text_defil{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(194, 131, 15);
+}
+
+/*css pour la version téléphone portable*/
+@media screen and (max-width:700px) {
+    .navbar{
+        align-content: center;
+        justify-content: center;
+        padding: 15px;
+    }
+    .Logo{
+        margin-bottom: 15px;
+        padding: 5px;
+    }
+    .container{
+        padding: 0;
+        align-content: center;
+        justify-content: center;
+    }
+    .card-img:hover{
+        transform: none; 
+    }
+    .info{
+        font-size: x-small;
+    }
+    .foot{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*css pour le formulaire de contact de la page contact*/
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #7158fc;
+    max-width: 800px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid;
+    color: gainsboro;
+    align-content: center;    
+}
+.title{
+    color: white;
+    
+}
+.cont{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.butn{
+    background-color: rgb(39, 201, 39);
+    border: none;
+    border-radius: 2px;
+    margin-top: 10px;
+    height: 30px;
+    color: white;
+}
+.butn:hover{
+    color: green;
+    background-color: white;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+/*css pour le grand image de la page d'accueil*/
+.boite_1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(/img/images\ \(0\).jpg);
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+/*css pour les images de gallerie et l'effet de survol des images*/
+.gallerie{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-img:hover{
+    transform: scale(1.3);
+    transition: .1s ease-in-out;  
+}
+/*css pour les mot d'information de la premier maison*/
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.liste1{
+    list-style: none;
+    line-height: 35px;
+}
+/*css pour l'image 2 avant la deuxieme maison*/
+.boite_2{
+    background-image: url();
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(/img/Maison_Calypso_Grece-1024x460.jpg);
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+/*css pour le pied de page*/
+.foot{
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+    background-color: rgb(136, 101, 56);
+    padding: 1.5rem;
+    color: rgb(217, 231, 247);
+}
+.icon{
+    
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.titre{
+    font-size: 2rem;
+    color: royalblue;
+}
